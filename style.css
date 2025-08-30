@@ -47,6 +47,7 @@ body {
 .main-heading {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 
 .sub-heading {
