@@ -69,6 +69,8 @@ body {
 }
 
 .date-block .large-date span {
+    font-size: inherit;
+    vertical-align: middle;
     margin-left: 0.5rem;
 }
 
