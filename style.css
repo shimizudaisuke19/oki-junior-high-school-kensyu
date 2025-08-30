@@ -1,0 +1,207 @@
+/* General Styles */
+:root {
+    --primary-color-start: #2E8B57; /* SeaGreen */
+    --primary-color-end: #20B2AA;   /* LightSeaGreen */
+    --text-color: #333;
+    --background-color: #FFFFFF;
+    --hero-text-color: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Hero Header */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color-start), var(--primary-color-end));
+    color: var(--hero-text-color);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid var(--hero-text-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sub-heading {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.date-block {
+    margin-bottom: 2.5rem;
+}
+
+.date-block .large-date {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.date-block .large-date span {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--hero-text-color);
+    color: var(--primary-color-end);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover, .cta-button:focus {
+    transform: translateY(-3px);
+    background-color: #f0f0f0;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color-start);
+    padding-bottom: 0.5rem;
+}
+
+/* About Section */
+.overview-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.overview-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Details Section */
+.details ul {
+    list-style-type: '・';
+    padding-left: 1.5rem;
+}
+
+.details li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.subjects, .workshop-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
+/* Message Section */
+.message blockquote {
+    border-left: 5px solid var(--primary-color-start);
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.message cite {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+    font-style: normal;
+}
+
+/* Gallery Section */
+.new-building-info {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+/* Apply Section */
+.apply {
+    text-align: center;
+}
+
+.apply p {
+    margin-bottom: 1rem;
+}
+
+.cta-button-footer {
+    background-color: var(--primary-color-start);
+    color: var(--hero-text-color);
+}
+
+.cta-button-footer:hover, .cta-button-footer:focus {
+    background-color: var(--primary-color-end);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .main-heading {
+        font-size: 2.8rem;
+    }
+
+    .date-block .large-date {
+        font-size: 5rem;
+    }
+}
