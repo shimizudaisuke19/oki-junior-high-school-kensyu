@@ -45,15 +45,16 @@ body {
 }
 
 .main-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     white-space: nowrap;
 }
 
 .sub-heading {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    white-space: nowrap;
 }
 
 .date-block {
