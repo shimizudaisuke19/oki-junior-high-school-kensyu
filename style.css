@@ -47,9 +47,6 @@ body {
 .main-heading {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .sub-heading {
