@@ -66,8 +66,7 @@ body {
 }
 
 .date-block .large-date span {
-    font-size: 1.5rem;
-    vertical-align: middle;
+    font-size: inherit;
     margin-left: 0.5rem;
 }
 
@@ -208,5 +207,5 @@ footer {
 }
 
 .date-block .large-date span {
-    font-size: 2rem;
+    font-size: inherit;
 }
