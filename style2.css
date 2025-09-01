@@ -164,6 +164,12 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+.workshop-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
 /* Apply Section */
 .apply {
     text-align: center;
