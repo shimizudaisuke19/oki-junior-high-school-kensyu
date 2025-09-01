@@ -124,6 +124,42 @@ section h2 {
     padding-left: 1.5rem;
 }
 
+/* Lesson Plan Section */
+.lesson-plans {
+    text-align: center;
+}
+
+.plan-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.plan-button {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #aaa;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    cursor: not-allowed; /* Indicates the button is not clickable */
+}
+
+.plan-button.disabled {
+    pointer-events: none; /* Disables click events */
+}
+
+@media (min-width: 768px) {
+    .plan-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
 .details li {
     font-size: 1.1rem;
     margin-bottom: 1rem;
