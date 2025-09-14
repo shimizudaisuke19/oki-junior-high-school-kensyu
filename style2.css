@@ -137,17 +137,26 @@ section h2 {
 
 .plan-button {
     display: inline-block;
-    background-color: #f0f0f0;
-    color: #aaa;
+    background-color: var(--primary-color-start); /* Blue color */
+    color: var(--hero-text-color); /* White text */
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    border: 1px solid #ddd;
-    cursor: not-allowed; /* Indicates the button is not clickable */
+    border: 1px solid var(--primary-color-start);
+    cursor: pointer; /* Normal pointer */
+    transition: background-color 0.2s ease;
+}
+
+.plan-button:hover, .plan-button:focus {
+    background-color: var(--primary-color-end);
 }
 
 .plan-button.disabled {
+    background-color: #f0f0f0;
+    color: #aaa;
+    border-color: #ddd;
+    cursor: not-allowed; /* Indicates the button is not clickable */
     pointer-events: none; /* Disables click events */
 }
 
