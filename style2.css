@@ -79,12 +79,25 @@ body {
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .cta-button:hover, .cta-button:focus {
     transform: translateY(-3px);
     background-color: #f0f0f0;
+}
+
+.cta-button.cta-button-secondary {
+    margin-top: 15px;
+    background-color: transparent;
+    border: 2px solid var(--hero-text-color);
+    color: var(--hero-text-color);
+}
+
+.cta-button.cta-button-secondary:hover,
+.cta-button.cta-button-secondary:focus {
+    background-color: var(--hero-text-color);
+    color: var(--primary-color-end);
 }
 
 /* Main Content */
