@@ -91,6 +91,18 @@ body {
     background-color: #f0f0f0;
 }
 
+.cta-button.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.cta-button.disabled:hover {
+    background-color: #ccc;
+    transform: none;
+}
+
 /* Main Content */
 main {
     max-width: 800px;
@@ -136,6 +148,29 @@ section h2 {
     font-size: 0.9rem;
     opacity: 0.8;
     margin-top: 0.25rem;
+}
+
+/* Guidance and Agenda Section */
+.guidance-plan ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.agenda p {
+    text-align: center;
+}
+
+.guidance-plan a, .agenda a {
+    background-color: var(--primary-color-start);
+    color: var(--hero-text-color);
+}
+
+.guidance-plan a:hover, .agenda a:hover {
+    background-color: var(--primary-color-end);
 }
 
 /* Message Section */
