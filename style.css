@@ -150,26 +150,22 @@ section h2 {
     margin-top: 0.25rem;
 }
 
-/* Guidance and Agenda Section */
-.guidance-plan ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
+/* Guidance Info and Agenda Section */
+.guidance-plan-info p {
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .agenda p {
     text-align: center;
 }
 
-.guidance-plan a, .agenda a {
+.agenda a {
     background-color: var(--primary-color-start);
     color: var(--hero-text-color);
 }
 
-.guidance-plan a:hover, .agenda a:hover {
+.agenda a:hover {
     background-color: var(--primary-color-end);
 }
 
