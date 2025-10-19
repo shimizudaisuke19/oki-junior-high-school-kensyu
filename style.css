@@ -150,23 +150,11 @@ section h2 {
     margin-top: 0.25rem;
 }
 
-/* Guidance Info and Agenda Section */
-.guidance-plan-info p {
+/* Guidance and Agenda Info Section */
+.guidance-plan-info p,
+.agenda-info p {
     text-align: center;
     margin-bottom: 0.5rem;
-}
-
-.agenda p {
-    text-align: center;
-}
-
-.agenda a {
-    background-color: var(--primary-color-start);
-    color: var(--hero-text-color);
-}
-
-.agenda a:hover {
-    background-color: var(--primary-color-end);
 }
 
 /* Message Section */
